@@ -1,0 +1,595 @@
+2026-09-18 19:18:21,731 | INFO | 🚀 Initializing XAU_USD M15 Bot (Linux/OANDA)
+2026-09-18 19:18:22,397 | INFO | SUCCESS: OANDA connected (DEMO) | Account: 101-004-29838909-001 | Balance: $100,000.00 | Equity: $100,000.00 GBP
+2026-09-18 19:18:22,538 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:18:22,540 | INFO | SUCCESS: Bot started successfully
+2026-09-18 19:18:22,540 | INFO | Settings | Symbol XAU_USD | Timeframe M15 | Risk 1.0% | Max trades 15 | Max loss 5.0% | SL 1.5x ATR | TP 2.5x ATR | Min conditions 5/7 | Sessions London + New York only
+2026-09-18 19:18:22,541 | INFO | Starting main loop; polling every 30s
+2026-09-18 19:18:22,922 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:18:24,524 | WARNING | Risk check failed: spread
+2026-09-18 19:18:55,168 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:18:56,272 | WARNING | Risk check failed: spread
+2026-09-18 19:19:26,922 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:19:28,525 | WARNING | Risk check failed: spread
+2026-09-18 19:19:58,921 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:20:00,456 | WARNING | Risk check failed: spread
+2026-09-18 19:20:30,987 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:20:32,113 | WARNING | Risk check failed: spread
+2026-09-18 19:21:02,646 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:21:03,805 | INFO | SIGNAL: Signal generated: BUY | Score: 6/7 | RR: 1:1.67
+2026-09-18 19:21:03,966 | INFO | Position size | Balance $100,000.00 | Risk $1,000.00 | Price risk 13.200 | Lots 0.76
+2026-09-18 19:21:03,966 | INFO | SIGNAL: BUY | Score 6/7 | Entry 4392.175 | SL 4378.975 | TP 4414.174 | Lots 0.76
+2026-09-18 19:21:04,105 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:21:04,475 | INFO | TRADE: Order placed | BUY | Trade: 5 | Units: 76 | SL: 4378.975 | TP: 4414.174
+2026-09-18 19:21:04,597 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:21:35,059 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:21:35,999 | INFO | TRADE: Trailing stop updated for 5: 4381.140
+2026-09-18 19:22:06,393 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:22:07,336 | INFO | TRADE: Trailing stop updated for 5: 4381.340
+2026-09-18 19:22:37,762 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:22:38,728 | INFO | TRADE: Trailing stop updated for 5: 4381.470
+2026-09-18 19:23:09,330 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:23:10,299 | INFO | TRADE: Trailing stop updated for 5: 4382.130
+2026-09-18 19:23:40,911 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:24:12,133 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:24:43,437 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:25:14,609 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:25:45,802 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:26:17,123 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:26:48,536 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:27:19,845 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:27:51,160 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:28:22,366 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:28:23,510 | INFO | STATUS 2026-09-18 18:28:23 UTC | Price $4390.210/$4390.580 | Spread 0.3700 | Balance $100,000.00 | Equity $99,946.68 | Daily P&L $+0.00 | Trades 0 | Win rate 0.0%
+2026-09-18 19:28:53,934 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:29:25,092 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:29:56,246 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:30:27,426 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:30:58,643 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:31:29,929 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:32:01,178 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:32:32,367 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:33:03,564 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:33:35,189 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:34:06,835 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:34:38,541 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:35:09,866 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:35:41,464 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:36:12,707 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:36:43,893 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:37:15,049 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:37:46,992 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:38:18,140 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:38:49,371 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:38:51,012 | INFO | STATUS 2026-09-18 18:38:51 UTC | Price $4385.770/$4386.190 | Spread 0.4200 | Balance $100,000.00 | Equity $99,697.31 | Daily P&L $+0.00 | Trades 0 | Win rate 0.0%
+2026-09-18 19:39:21,429 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:39:52,702 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:40:23,923 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:40:55,117 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:41:26,359 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:41:57,639 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:42:28,776 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:42:59,974 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:43:31,148 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:44:02,313 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:44:33,576 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:44:34,656 | WARNING | Risk check failed: spread
+2026-09-18 19:45:05,253 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:45:06,418 | INFO | SIGNAL: Signal generated: BUY | Score: 5/7 | RR: 1:1.67
+2026-09-18 19:45:06,586 | INFO | Position size | Balance $99,475.95 | Risk $994.76 | Price risk 12.822 | Lots 0.78
+2026-09-18 19:45:06,586 | INFO | SIGNAL: BUY | Score 5/7 | Entry 4380.935 | SL 4368.113 | TP 4402.305 | Lots 0.78
+2026-09-18 19:45:06,726 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:45:07,109 | INFO | TRADE: Order placed | BUY | Trade: 19 | Units: 78 | SL: 4368.113 | TP: 4402.305
+2026-09-18 19:45:07,214 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:45:37,700 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:45:38,058 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 19:45:38,168 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:45:38,751 | INFO | TRADE: Trailing stop updated for 19: 4372.382
+2026-09-18 19:46:09,178 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:46:09,530 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 19:46:09,659 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:46:40,542 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:46:40,906 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 19:46:41,021 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:46:41,576 | INFO | TRADE: Trailing stop updated for 19: 4372.442
+2026-09-18 19:47:12,102 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:47:12,491 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 19:47:12,604 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:47:13,181 | INFO | TRADE: Trailing stop updated for 19: 4373.772
+2026-09-18 19:47:43,690 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:47:44,039 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 19:47:44,146 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:47:44,700 | INFO | TRADE: Trailing stop updated for 19: 4374.552
+2026-09-18 19:48:15,126 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:48:15,486 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 19:48:15,616 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:48:16,189 | INFO | TRADE: Trailing stop updated for 19: 4374.792
+2026-09-18 19:48:46,962 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:48:47,307 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 19:48:47,434 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:49:18,225 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:49:18,576 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 19:49:18,683 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:49:19,988 | INFO | STATUS 2026-09-18 18:49:19 UTC | Price $4382.540/$4383.070 | Spread 0.5300 | Balance $99,475.95 | Equity $99,552.64 | Daily P&L $-524.05 | Trades 1 | Win rate 0.0%
+2026-09-18 19:49:50,821 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:49:51,197 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 19:49:51,332 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:50:23,052 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:50:23,401 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 19:50:23,523 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:50:54,366 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:50:54,708 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 19:50:54,844 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:51:26,093 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:51:26,439 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 19:51:26,549 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:51:57,313 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:51:57,688 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 19:51:57,812 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:52:28,581 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:52:28,931 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 19:52:29,042 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:52:59,862 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:53:00,207 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 19:53:00,328 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:53:31,164 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:53:31,520 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 19:53:31,636 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:54:02,426 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:54:02,796 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 19:54:02,916 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:54:33,991 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:54:34,344 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 19:54:34,468 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:55:05,300 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:55:05,678 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 19:55:05,817 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:55:36,645 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:55:36,991 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 19:55:37,126 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:56:07,929 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:56:08,285 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 19:56:08,428 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:56:39,280 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:56:39,628 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 19:56:39,764 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:57:10,622 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:57:10,985 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 19:57:11,102 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:57:41,956 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:57:42,362 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 19:57:42,496 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:58:13,385 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:58:13,747 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 19:58:13,922 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:58:44,687 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:58:45,029 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 19:58:45,176 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:59:16,144 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:59:16,512 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 19:59:16,648 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:59:47,519 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 19:59:47,875 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 19:59:48,011 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 19:59:48,804 | INFO | STATUS 2026-09-18 18:59:48 UTC | Price $4381.350/$4381.870 | Spread 0.5200 | Balance $99,475.95 | Equity $99,485.75 | Daily P&L $-524.05 | Trades 1 | Win rate 0.0%
+2026-09-18 20:00:19,316 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:00:19,696 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:00:19,884 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:00:51,522 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:00:51,891 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:00:52,029 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:01:22,808 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:01:23,161 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:01:23,281 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:01:54,080 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:01:54,433 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:01:54,554 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:02:25,377 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:02:25,773 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:02:25,876 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:02:57,347 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:02:57,693 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:02:57,827 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:03:28,700 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:03:29,056 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:03:29,183 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:04:00,094 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:04:00,476 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:04:00,630 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:04:31,437 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:04:31,802 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:04:31,916 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:05:03,390 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:05:03,760 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:05:03,860 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:05:35,709 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:05:36,537 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:05:36,661 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:06:07,542 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:06:07,901 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:06:08,015 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:06:08,623 | INFO | TRADE: Trailing stop updated for 19: 4375.513
+2026-09-18 20:06:39,128 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:06:39,483 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:06:39,605 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:06:40,220 | INFO | TRADE: Trailing stop updated for 19: 4375.673
+2026-09-18 20:07:11,084 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:07:11,437 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:07:11,563 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:07:42,398 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:07:42,792 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:07:42,921 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:08:13,758 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:08:14,160 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:08:14,268 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:08:45,228 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:08:45,594 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:08:45,721 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:09:16,671 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:09:17,054 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:09:17,176 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:09:17,795 | INFO | TRADE: Trailing stop updated for 19: 4375.763
+2026-09-18 20:09:48,328 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:09:48,688 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:09:48,824 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:09:49,437 | INFO | TRADE: Trailing stop updated for 19: 4376.263
+2026-09-18 20:10:20,225 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:10:20,614 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:10:20,728 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:10:21,499 | INFO | STATUS 2026-09-18 19:10:21 UTC | Price $4384.210/$4384.710 | Spread 0.5000 | Balance $99,475.95 | Equity $99,631.61 | Daily P&L $-524.05 | Trades 1 | Win rate 0.0%
+2026-09-18 20:10:51,915 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:10:52,307 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:10:52,441 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:11:23,245 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:11:23,613 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:11:23,744 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:11:54,797 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:11:55,160 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:11:55,300 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:11:55,866 | INFO | TRADE: Trailing stop updated for 19: 4376.643
+2026-09-18 20:12:26,459 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:12:26,814 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:12:26,920 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:12:27,528 | INFO | TRADE: Trailing stop updated for 19: 4377.093
+2026-09-18 20:12:57,961 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:12:58,320 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:12:58,453 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:13:29,285 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:13:29,648 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:13:29,758 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:14:00,696 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:14:01,052 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:14:01,170 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:14:31,943 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:14:32,306 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:14:32,445 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:15:03,288 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:15:35,388 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:16:06,544 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:16:37,875 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:17:09,153 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:17:40,406 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:18:11,607 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:18:42,860 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:19:14,587 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:19:45,771 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:20:16,921 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:20:48,967 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:20:50,141 | INFO | STATUS 2026-09-18 19:20:50 UTC | Price $4381.890/$4382.530 | Spread 0.6400 | Balance $99,475.95 | Equity $99,515.15 | Daily P&L $-524.05 | Trades 1 | Win rate 0.0%
+2026-09-18 20:21:20,572 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:21:52,159 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:22:23,436 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:22:54,639 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:23:25,818 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:23:57,354 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:24:29,205 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:25:00,437 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:25:31,962 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:26:03,169 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:26:34,415 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:27:05,682 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:27:36,873 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:28:08,033 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:28:39,227 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:29:10,360 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:29:41,733 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:30:12,905 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:30:13,260 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:30:13,387 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:30:44,202 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:30:44,562 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:30:44,692 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:31:15,436 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:31:15,798 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:31:15,919 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:31:16,705 | INFO | STATUS 2026-09-18 19:31:16 UTC | Price $4380.580/$4381.170 | Spread 0.5900 | Balance $99,475.95 | Equity $99,438.90 | Daily P&L $-524.05 | Trades 1 | Win rate 0.0%
+2026-09-18 20:31:47,138 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:31:47,511 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:31:47,650 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:32:19,398 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:32:19,739 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:32:19,873 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:32:50,692 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:32:51,043 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:32:51,169 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:33:21,960 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:33:22,328 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:33:22,466 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:33:53,266 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:33:53,624 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:33:53,759 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:34:24,563 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:34:24,896 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:34:25,004 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:34:55,852 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:34:56,210 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:34:56,335 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:35:27,329 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:35:27,680 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:35:27,796 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:35:59,043 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:35:59,388 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:35:59,524 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:36:30,626 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:36:30,984 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:36:31,124 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:37:02,151 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:37:02,519 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:37:02,655 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:37:33,899 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:37:34,241 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:37:34,355 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:38:05,255 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:38:05,622 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:38:05,733 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:38:36,584 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:38:36,969 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:38:37,106 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:39:07,967 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:39:08,364 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:39:08,507 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:39:39,414 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:39:39,781 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:39:39,921 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:40:10,797 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:40:11,186 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:40:11,324 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:40:42,137 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:40:42,488 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:40:42,633 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:41:14,076 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:41:14,425 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:41:14,542 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:41:45,343 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:41:45,733 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:41:45,863 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:41:46,644 | INFO | STATUS 2026-09-18 19:41:46 UTC | Price $4381.290/$4381.890 | Spread 0.6000 | Balance $99,475.95 | Equity $99,478.83 | Daily P&L $-524.05 | Trades 1 | Win rate 0.0%
+2026-09-18 20:42:17,098 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:42:17,461 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:42:17,590 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:42:48,353 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:42:48,746 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:42:48,884 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:43:20,141 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:43:20,540 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:43:20,677 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:43:51,605 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:43:51,971 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:43:52,110 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:44:22,926 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:44:23,270 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:44:23,410 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:44:54,272 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:44:54,635 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:44:54,768 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:45:25,513 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:45:25,873 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:45:25,985 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:45:56,769 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:45:57,118 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:45:57,259 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:46:28,604 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:46:28,990 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:46:29,132 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:46:59,969 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:47:00,339 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:47:00,469 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:47:31,389 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:47:31,742 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:47:31,863 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:48:02,784 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:48:03,170 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:48:03,288 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:48:34,175 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:48:34,519 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:48:34,637 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:49:05,406 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:49:05,765 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:49:05,882 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:49:36,781 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:49:37,129 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:49:37,259 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:50:08,149 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:50:08,501 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:50:08,622 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:50:39,434 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:50:39,793 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:50:39,916 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:51:10,821 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:51:11,171 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:51:11,288 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:51:42,109 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:51:42,935 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:51:43,061 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:52:13,935 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:52:14,744 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:52:14,880 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:52:15,657 | INFO | STATUS 2026-09-18 19:52:15 UTC | Price $4380.170/$4380.750 | Spread 0.5800 | Balance $99,475.95 | Equity $99,367.15 | Daily P&L $-524.05 | Trades 1 | Win rate 0.0%
+2026-09-18 20:52:46,100 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:52:46,476 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:52:46,587 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:53:17,325 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:53:17,694 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:53:17,835 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:53:48,651 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:53:49,026 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:53:49,144 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:54:20,049 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:54:20,404 | WARNING | ⚠️ WARNING: Price below EMA9
+2026-09-18 20:54:20,552 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:54:51,524 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:54:52,687 | WARNING | Risk check failed: spread
+2026-09-18 20:55:23,135 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:55:24,348 | INFO | SIGNAL: Signal generated: BUY | Score: 5/7 | RR: 1:1.67
+2026-09-18 20:55:24,530 | INFO | Position size | Balance $99,230.09 | Risk $992.30 | Price risk 11.400 | Lots 0.87
+2026-09-18 20:55:24,531 | INFO | SIGNAL: BUY | Score 5/7 | Entry 4381.54 | SL 4370.14 | TP 4400.54 | Lots 0.87
+2026-09-18 20:55:24,662 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 20:55:24,858 | WARNING | Spread too high: 0.5400 > 0.5000
+2026-09-18 20:55:55,245 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:56:27,350 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:56:28,471 | WARNING | Risk check failed: spread
+2026-09-18 20:56:58,948 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:57:00,124 | WARNING | Risk check failed: spread
+2026-09-18 20:57:30,568 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:57:31,748 | WARNING | Risk check failed: spread
+2026-09-18 20:58:02,253 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:58:03,434 | WARNING | Risk check failed: spread
+2026-09-18 20:58:33,862 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:58:34,967 | WARNING | Risk check failed: spread
+2026-09-18 20:59:05,619 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 20:59:06,761 | WARNING | Risk check failed: spread
+2026-09-18 20:59:37,291 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:00:09,020 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 21:00:09,454 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:00:10,681 | WARNING | Risk check failed: spread
+2026-09-18 21:00:41,135 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:00:42,235 | WARNING | Risk check failed: spread
+2026-09-18 21:01:12,704 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:01:13,856 | WARNING | Risk check failed: spread
+2026-09-18 21:01:44,276 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:01:45,441 | WARNING | Risk check failed: spread
+2026-09-18 21:02:15,841 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:02:16,958 | WARNING | Risk check failed: spread
+2026-09-18 21:02:47,431 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:02:48,549 | WARNING | Risk check failed: spread
+2026-09-18 21:02:48,963 | INFO | STATUS 2026-09-18 20:02:48 UTC | Price $4377.760/$4378.420 | Spread 0.6600 | Balance $99,230.09 | Equity $99,230.09 | Daily P&L $-769.91 | Trades 2 | Win rate 0.0%
+2026-09-18 21:03:19,386 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:03:20,562 | WARNING | Risk check failed: spread
+2026-09-18 21:03:51,056 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:03:52,211 | WARNING | Risk check failed: spread
+2026-09-18 21:04:22,618 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:04:23,789 | INFO | SIGNAL: Signal generated: SELL | Score: 5/7 | RR: 1:1.67
+2026-09-18 21:04:23,947 | INFO | Position size | Balance $99,230.09 | Risk $992.30 | Price risk 11.484 | Lots 0.86
+2026-09-18 21:04:23,948 | INFO | SIGNAL: SELL | Score 5/7 | Entry 4376.61 | SL 4388.094 | TP 4357.469 | Lots 0.86
+2026-09-18 21:04:24,081 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 21:04:24,467 | INFO | TRADE: Order placed | SELL | Trade: 47 | Units: -86 | SL: 4388.094 | TP: 4357.469
+2026-09-18 21:04:24,608 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 21:04:55,064 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:04:55,407 | WARNING | 🚨 EXIT NOW: EMA9 crossed above EMA21
+2026-09-18 21:04:55,542 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 21:04:55,544 | WARNING | 🚨 EXIT NOW: Price broke above EMA50
+2026-09-18 21:04:55,671 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 21:04:55,852 | INFO | TRADE: Position 47 closed
+2026-09-18 21:04:55,978 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 21:05:26,391 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:05:58,157 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:06:29,836 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:06:30,914 | WARNING | Risk check failed: spread
+2026-09-18 21:07:01,801 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:07:33,371 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:07:34,525 | WARNING | Risk check failed: spread
+2026-09-18 21:08:05,423 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:08:37,052 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:08:38,307 | WARNING | Risk check failed: spread
+2026-09-18 21:09:08,701 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:09:40,455 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:10:12,062 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:10:13,174 | WARNING | Risk check failed: spread
+2026-09-18 21:10:43,616 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:11:15,235 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:11:16,379 | WARNING | Risk check failed: spread
+2026-09-18 21:11:47,436 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:12:18,980 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:12:50,598 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:13:22,306 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:13:23,503 | WARNING | Risk check failed: spread
+2026-09-18 21:13:23,880 | INFO | STATUS 2026-09-18 20:13:23 UTC | Price $4383.170/$4383.640 | Spread 0.4700 | Balance $99,187.30 | Equity $99,187.30 | Daily P&L $-812.70 | Trades 3 | Win rate 0.0%
+2026-09-18 21:13:54,351 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:13:55,472 | WARNING | Risk check failed: spread
+2026-09-18 21:14:25,866 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:14:57,473 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:14:58,672 | WARNING | Risk check failed: spread
+2026-09-18 21:15:29,121 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:15:30,313 | WARNING | Risk check failed: spread
+2026-09-18 21:16:00,776 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:16:01,965 | WARNING | Risk check failed: spread
+2026-09-18 21:16:35,278 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:16:36,443 | WARNING | Risk check failed: spread
+2026-09-18 21:17:06,892 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:17:08,042 | WARNING | Risk check failed: spread
+2026-09-18 21:17:38,452 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:17:39,582 | WARNING | Risk check failed: spread
+2026-09-18 21:18:10,017 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:18:11,163 | WARNING | Risk check failed: spread
+2026-09-18 21:18:42,056 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:18:43,255 | WARNING | Risk check failed: spread
+2026-09-18 21:19:13,720 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:19:14,817 | WARNING | Risk check failed: spread
+2026-09-18 21:19:45,239 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:19:46,398 | WARNING | Risk check failed: spread
+2026-09-18 21:20:21,202 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:20:22,342 | WARNING | Risk check failed: spread
+2026-09-18 21:20:52,855 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:20:53,996 | WARNING | Risk check failed: spread
+2026-09-18 21:21:24,464 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:21:25,516 | WARNING | Risk check failed: spread
+2026-09-18 21:21:56,031 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:21:57,152 | WARNING | Risk check failed: spread
+2026-09-18 21:22:27,702 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:22:29,279 | WARNING | Risk check failed: spread
+2026-09-18 21:22:59,699 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:23:00,868 | WARNING | Risk check failed: spread
+2026-09-18 21:23:31,369 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:23:32,939 | WARNING | Risk check failed: spread
+2026-09-18 21:24:03,466 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:24:04,541 | WARNING | Risk check failed: spread
+2026-09-18 21:24:04,932 | INFO | STATUS 2026-09-18 20:24:04 UTC | Price $4382.880/$4383.470 | Spread 0.5900 | Balance $99,187.30 | Equity $99,187.30 | Daily P&L $-812.70 | Trades 3 | Win rate 0.0%
+2026-09-18 21:24:35,321 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:24:36,879 | WARNING | Risk check failed: spread
+2026-09-18 21:25:07,317 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:25:08,489 | WARNING | Risk check failed: spread
+2026-09-18 21:25:39,040 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:25:40,210 | WARNING | Risk check failed: spread
+2026-09-18 21:26:10,824 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:26:11,946 | WARNING | Risk check failed: spread
+2026-09-18 21:26:42,362 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:27:13,943 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:27:15,111 | WARNING | Risk check failed: spread
+2026-09-18 21:27:45,551 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:27:47,128 | WARNING | Risk check failed: spread
+2026-09-18 21:28:18,266 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:28:19,413 | WARNING | Risk check failed: spread
+2026-09-18 21:28:49,792 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:28:50,935 | WARNING | Risk check failed: spread
+2026-09-18 21:29:21,353 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:29:22,479 | WARNING | Risk check failed: spread
+2026-09-18 21:29:52,887 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:30:24,478 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:30:25,593 | WARNING | Risk check failed: spread
+2026-09-18 21:30:56,030 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:30:57,167 | WARNING | Risk check failed: spread
+2026-09-18 21:31:27,599 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:31:28,718 | WARNING | Risk check failed: spread
+2026-09-18 21:31:59,110 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:32:00,270 | WARNING | Risk check failed: spread
+2026-09-18 21:32:30,698 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:32:31,813 | WARNING | Risk check failed: spread
+2026-09-18 21:33:02,217 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:33:03,428 | WARNING | Risk check failed: spread
+2026-09-18 21:33:33,830 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:33:34,951 | WARNING | Risk check failed: spread
+2026-09-18 21:34:05,364 | INFO | Fetched 499 candles | XAU_USD M15
+2026-09-18 21:34:06,479 | WARNING | Risk check failed: spread
+2026-09-18 21:34:14,707 | INFO | Bot stopped by user
+2026-09-18 21:34:14,708 | INFO | OANDA disconnected
+2026-09-18 21:34:14,827 | ERROR | Telegram error: 404 Client Error: Not Found for url: https://api.telegram.org/botyour-telegram-bot-token/sendMessage
+2026-09-18 21:34:14,829 | INFO | Bot stopped successfully
