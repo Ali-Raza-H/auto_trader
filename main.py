@@ -63,6 +63,9 @@ class XAUUSDBot:
             return
 
         positions = self.broker.get_open_positions()
+        if positions is None:
+            logger.warning("Open positions unavailable; skipping trading and management this tick")
+            return
         if positions:
             self.manage_position(positions[0], candles)
         else:
@@ -80,6 +83,9 @@ class XAUUSDBot:
             return
 
         lot_size = self.risk.calculate_lot_size(signal["entry"], signal["stop_loss"])
+        if lot_size <= 0:
+            logger.warning("Signal skipped: calculated position size is below the minimum lot")
+            return
         logger.signal(
             f"{signal['type']} | Score {signal['score']}/7 | Entry {signal['entry']} | "
             f"SL {signal['stop_loss']} | TP {signal['take_profit']} | Lots {lot_size}"
@@ -111,14 +117,15 @@ class XAUUSDBot:
             logger.warning(warning)
             self.telegram.send_warning(f"Trade #{trade_id}\n{warning}")
 
+        if not self.active_signal and trade_id != "N/A":
+            self.active_signal = self._signal_from_position(position, candles, position_type)
+
         if exit_now:
             if self.broker.close_position(trade_id):
                 self.telegram.send_trade_closed(trade_id, profit, "Trend End Signal")
                 self.active_signal = None
             return
 
-        if self.active_signal is None:
-            self.active_signal = self._signal_from_position(position, candles, position_type)
         if self.active_signal:
             self.risk.manage_breakeven(position, self.active_signal)
             enriched = TechnicalIndicators.calculate_all(candles)
@@ -142,24 +149,33 @@ class XAUUSDBot:
         account = self.broker.get_account_info()
         stats = self.broker.get_daily_stats()
         if account:
+            currency = account.get("currency", "")
+            daily_summary = (
+                f"Daily P&L {stats['profit']:+.2f} {currency} | Trades {stats['trades']} | "
+                f"Win rate {stats['win_rate']:.1f}%"
+                if stats
+                else "Daily stats unavailable"
+            )
             logger.info(
                 f"STATUS {datetime.now(timezone.utc):%Y-%m-%d %H:%M:%S} UTC | "
-                f"Price ${price['bid']:.3f}/${price['ask']:.3f} | Spread {price['spread']:.4f} | "
-                f"Balance ${account['balance']:,.2f} | Equity ${account['equity']:,.2f} | "
-                f"Daily P&L ${stats['profit']:+.2f} | Trades {stats['trades']} | "
-                f"Win rate {stats['win_rate']:.1f}%"
+                f"Price {price['bid']:.3f}/{price['ask']:.3f} {Config.SYMBOL.split('_')[-1]} | "
+                f"Spread {price['spread']:.4f} | Balance {account['balance']:,.2f} {currency} | "
+                f"Equity {account['equity']:,.2f} {currency} | {daily_summary}"
             )
 
     def send_daily_report(self):
         account = self.broker.get_account_info()
-        if account:
-            self.telegram.send_daily_report(self.broker.get_daily_stats(), account)
+        stats = self.broker.get_daily_stats()
+        if account and stats:
+            self.telegram.send_daily_report(stats, account)
 
     def print_settings(self):
         logger.info(
             f"Settings | Symbol {Config.SYMBOL} | Timeframe {Config.TIMEFRAME} | "
             f"Risk {Config.RISK_PERCENT}% | Max trades {Config.MAX_DAILY_TRADES} | "
-            f"Max loss {Config.MAX_DAILY_LOSS}% | SL {Config.ATR_SL_MULTI}x ATR | "
+            f"Max daily loss {Config.MAX_DAILY_LOSS}% | "
+            f"Max account drawdown {Config.MAX_ACCOUNT_DRAWDOWN}% | "
+            f"Baseline {Config.DRAWDOWN_BASELINE_BALANCE:,.2f} | SL {Config.ATR_SL_MULTI}x ATR | "
             f"TP {Config.ATR_TP_MULTI}x ATR | Min conditions {Config.MIN_CONDITIONS}/7 | "
             "Sessions London + New York only"
         )

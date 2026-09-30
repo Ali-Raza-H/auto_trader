@@ -44,9 +44,11 @@ class Config:
     BREAKEVEN_OFFSET = 0.02
 
     # RISK MANAGEMENT
-    RISK_PERCENT = 1.0
+    RISK_PERCENT = float(os.getenv("RISK_PERCENT", "0.25"))
     MAX_DAILY_TRADES = 15
-    MAX_DAILY_LOSS = 5.0
+    MAX_DAILY_LOSS = float(os.getenv("MAX_DAILY_LOSS", "1.0"))
+    DRAWDOWN_BASELINE_BALANCE = float(os.getenv("DRAWDOWN_BASELINE_BALANCE", "100000"))
+    MAX_ACCOUNT_DRAWDOWN = float(os.getenv("MAX_ACCOUNT_DRAWDOWN", "5.0"))
     MAX_LOT_SIZE = 5.0
     MIN_LOT_SIZE = 0.01
     MAX_SPREAD = 0.5  # XAU_USD price units

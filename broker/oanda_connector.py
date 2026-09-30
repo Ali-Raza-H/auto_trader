@@ -212,14 +212,17 @@ class OandaConnector:
 
     def get_open_positions(self):
         try:
-            return self._request(
+            positions = self._request(
                 "GET",
                 f"/v3/accounts/{self.account_id}/trades",
                 params={"instrument": Config.SYMBOL, "state": "OPEN"},
-            ).get("trades", [])
+            ).get("trades")
+            if not isinstance(positions, list):
+                raise ValueError("OANDA response did not contain a trades list")
+            return positions
         except (requests.RequestException, KeyError, ValueError) as exc:
             logger.error(f"Get positions error: {exc}")
-            return []
+            return None
 
     def get_daily_stats(self):
         try:
@@ -227,7 +230,9 @@ class OandaConnector:
                 "GET",
                 f"/v3/accounts/{self.account_id}/trades",
                 params={"instrument": Config.SYMBOL, "state": "CLOSED", "count": 500},
-            ).get("trades", [])
+            ).get("trades")
+            if not isinstance(trades, list):
+                raise ValueError("OANDA response did not contain a trades list")
             today = datetime.now(timezone.utc).date()
             today_trades = []
             for trade in trades:
@@ -246,4 +251,4 @@ class OandaConnector:
             }
         except (requests.RequestException, KeyError, ValueError) as exc:
             logger.error(f"Daily stats error: {exc}")
-            return {"trades": 0, "profit": 0, "wins": 0, "losses": 0, "win_rate": 0}
+            return None

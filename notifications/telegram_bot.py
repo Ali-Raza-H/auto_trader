@@ -8,9 +8,14 @@ from logs.logger import logger
 
 class TelegramNotifier:
     def __init__(self):
-        self.token = Config.TELEGRAM_TOKEN
-        self.chat_id = Config.TELEGRAM_CHAT_ID
-        self.enabled = bool(self.token and self.chat_id)
+        self.token = (Config.TELEGRAM_TOKEN or "").strip()
+        self.chat_id = (Config.TELEGRAM_CHAT_ID or "").strip()
+        placeholders = {"your-telegram-bot-token", "your-chat-id"}
+        self.enabled = bool(self.token and self.chat_id) and not (
+            self.token.lower() in placeholders or self.chat_id.lower() in placeholders
+        )
+        if (self.token or self.chat_id) and not self.enabled:
+            logger.warning("Telegram notifications disabled: replace the placeholder token/chat ID")
 
     def send(self, message):
         if not self.enabled:
@@ -78,16 +83,19 @@ class TelegramNotifier:
         emoji = "✅" if profit > 0 else "❌"
         return self.send(
             f"{emoji} <b>TRADE CLOSED #{trade_id}</b>\n\n"
-            f"Profit: ${profit:+.2f}\nReason: {reason}\n"
+            f"Profit: {profit:+.2f} (account currency)\nReason: {reason}\n"
             f"Time: {datetime.now(timezone.utc):%H:%M:%S UTC}"
         )
 
     def send_daily_report(self, stats, account):
+        currency = account.get("currency", "account currency")
         return self.send(
             f"📊 <b>DAILY REPORT - {datetime.now(timezone.utc):%Y-%m-%d}</b>\n\n"
-            f"💼 <b>Account</b>\nBalance: ${account['balance']:,.2f}\n"
-            f"Equity: ${account['equity']:,.2f}\nUnrealized P&L: ${account['profit']:+,.2f}\n\n"
+            f"💼 <b>Account</b>\nBalance: {account['balance']:,.2f} {currency}\n"
+            f"Equity: {account['equity']:,.2f} {currency}\n"
+            f"Unrealized P&L: {account['profit']:+,.2f} {currency}\n\n"
             f"📈 <b>Today's Performance</b>\nTrades: {stats['trades']}\n"
             f"Wins: {stats['wins']} | Losses: {stats['losses']}\n"
-            f"Win rate: {stats['win_rate']:.1f}%\nDaily P&L: ${stats['profit']:+.2f}"
+            f"Win rate: {stats['win_rate']:.1f}%\n"
+            f"Daily P&L: {stats['profit']:+.2f} {currency}"
         )
