@@ -87,7 +87,7 @@ class XAUUSDBot:
             logger.warning("Signal skipped: calculated position size is below the minimum lot")
             return
         logger.signal(
-            f"{signal['type']} | Score {signal['score']}/7 | Entry {signal['entry']} | "
+            f"{signal['type']} | {signal['signal_method']} | Entry {signal['entry']} | "
             f"SL {signal['stop_loss']} | TP {signal['take_profit']} | Lots {lot_size}"
         )
         self.telegram.send_signal(signal, lot_size)
@@ -97,7 +97,7 @@ class XAUUSDBot:
             lot_size,
             signal["stop_loss"],
             signal["take_profit"],
-            f"{Config.MAGIC_COMMENT} | Score:{signal['score']}/7",
+            f"{Config.MAGIC_COMMENT} | {signal['signal_method']}",
         )
         if result:
             self.active_signal = signal
@@ -176,7 +176,8 @@ class XAUUSDBot:
             f"Max daily loss {Config.MAX_DAILY_LOSS}% | "
             f"Max account drawdown {Config.MAX_ACCOUNT_DRAWDOWN}% | "
             f"Baseline {Config.DRAWDOWN_BASELINE_BALANCE:,.2f} | SL {Config.ATR_SL_MULTI}x ATR | "
-            f"TP {Config.ATR_TP_MULTI}x ATR | Min conditions {Config.MIN_CONDITIONS}/7 | "
+            f"TP {Config.ATR_TP_MULTI}x ATR | Chandelier Entry "
+            f"{Config.CHANDELIER_ATR_PERIOD}/{Config.CHANDELIER_ATR_MULTIPLIER}x ATR | "
             "Sessions London + New York only"
         )
 

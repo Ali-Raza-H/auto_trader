@@ -44,9 +44,9 @@ class TelegramNotifier:
 
     def send_signal(self, signal, lot_size):
         emoji = "🟢" if signal["type"] == "BUY" else "🔴"
-        conditions = "\n".join(
-            f"{'✅' if met else '❌'} {name}"
-            for name, met in signal["conditions"].items()
+        signal_details = (
+            f"Chandelier ATR distance: {signal['chandelier_atr']}\n"
+            f"Chandelier stop: {signal['chandelier_stop']}"
         )
         levels = "\n".join(
             f"{kind.title()}: {level:.3f}" for kind, level in signal.get("levels", [])[-4:]
@@ -55,7 +55,7 @@ class TelegramNotifier:
             f"{emoji} <b>{Config.SYMBOL} {Config.TIMEFRAME} {signal['type']} SIGNAL</b>\n\n"
             f"📍 <b>Session:</b> {signal['session']}\n"
             f"⏰ <b>Time:</b> {signal['timestamp'].strftime('%H:%M:%S UTC')}\n"
-            f"💪 <b>Strength:</b> {signal['score']}/7\n\n"
+            f"🧭 <b>Signal:</b> {signal['signal_method']}\n\n"
             f"━━━━━━━━━━━━━━━━━━━━\n<b>TRADE LEVELS</b>\n"
             f"📌 Entry: <b>{signal['entry']}</b>\n"
             f"🛑 Stop Loss: <b>{signal['stop_loss']}</b> ({signal['sl_pips']})\n"
@@ -65,9 +65,10 @@ class TelegramNotifier:
             f"⚖️ Risk/Reward: <b>1:{signal['rr']}</b>\n\n"
             f"📈 <b>INDICATORS</b>\n"
             f"RSI: {signal['rsi']} | ATR: {signal['atr']} | Trend: {signal['trend']}\n"
-            f"MACD: {signal['macd']} | EMA9: {signal['ema9']} | EMA21: {signal['ema21']}\n\n"
+            f"MACD: {signal['macd']} | EMA9: {signal['ema9']} | EMA21: {signal['ema21']}\n"
+            f"{signal_details}\n\n"
             f"📐 <b>RECENT LEVELS</b>\n{levels}\n\n"
-            f"✔️ <b>CONDITIONS</b>\n{conditions}"
+            f"✔️ Signal triggered by confirmed Chandelier Exit direction flip."
         )
         return self.send(message)
 
